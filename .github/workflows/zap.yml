@@ -1,0 +1,7 @@
+- name: OWASP ZAP Full Scan
+  uses: zaproxy/action-full-scan@v0.2.0
+  with:
+    docker_name: # default is owasp/zap2docker-stable
+    # Additional command line options
+    issue_title: # optional, default is ZAP Full Scan Report
+    # The action status will be set to fail if ZAP identifies any alerts during the full scan
